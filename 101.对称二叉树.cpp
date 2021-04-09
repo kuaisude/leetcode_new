@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=94 lang=cpp
+ * @lc app=leetcode.cn id=101 lang=cpp
  *
- * [94] 二叉树的中序遍历
+ * [101] 对称二叉树
  */
 
 // @lc code=start
@@ -18,18 +18,8 @@
  */
 class Solution {
 public:
-    void inorder(TreeNode* root , vector<int>& res){
-        if(!root){
-            return ;
-        }
-        inorder(root->left,res);
-        res.push_back(root->val);
-        inorder(root->right,res);
-    }
-    vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> res;
-        inorder(root,res);
-        return res;
+    bool isSymmetric(TreeNode* root) {
+
     }
 };
 // @lc code=end

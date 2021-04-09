@@ -19,7 +19,7 @@ public:
         }
         string str;
         for(int i = 0;i<haystack.size();i++){
-            str = haystack.substr(i,needle.size());
+            str = haystack.substr(i,needle.size());//偏移量
             if(str == needle){
                 return i;
             }   
